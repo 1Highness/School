@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bishop Agori Iwe Memorial Anglican Boys' Grammar School</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #0059b3;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .about, .vision, .departments, .contact {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #004080;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bishop Agori Iwe Memorial Anglican Boys' Grammar School</h1>
+    <p>Raising Godly Leaders Through Quality Education</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision & Mission</a>
+    <a href="#departments">Departments</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Our School</h2>
+    <p>Bishop Agori Iwe Memorial Anglican Boys' Grammar School is a prestigious institution committed to academic excellence, discipline, and moral upbringing. 
+    Established to nurture young boys into responsible, God-fearing leaders, our school stands as a beacon of hope and transformation in Ughelli, Delta State.</p>
+  </section>
+
+  <section id="vision" class="vision">
+    <h2>Vision & Mission</h2>
+    <p><strong>Vision:</strong> To be a model secondary school known for raising upright and intelligent leaders.</p>
+    <p><strong>Mission:</strong> To provide balanced education that combines academic excellence with moral and spiritual development.</p>
+  </section>
+
+  <section id="departments" class="departments">
+    <h2>Our Departments</h2>
+    <ul>
+      <li>Science Department</li>
+      <li>Arts and Humanities</li>
+      <li>Commercial Department</li>
+      <li>Technical and Vocational Studies</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Bishop Agori Iwe Memorial Anglican Boys' Grammar School, Ughelli, Delta State.</p>
+    <p><strong>Phone:</strong> +234 812 345 6789</p>
+    <p><strong>Email:</strong> info@bishopagoriweschool.edu.ng</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Bishop Agori Iwe Memorial Anglican Boys' Grammar School. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
