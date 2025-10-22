@@ -4,158 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bishop Agori Iwe Memorial Anglican Boys' Grammar School</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
 
-    body {
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    header {
-      background: #004080;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-
-    nav {
-      background: #0059b3;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      color: #004080;
-      margin-bottom: 20px;
-    }
-
-    .about, .vision, .departments, .contact {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    ul {
-      list-style: disc;
-      margin-left: 40px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #004080;
-      color: white;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav a {
-        margin: 8px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Bishop Agori Iwe Memorial Anglican Boys' Grammar School</h1>
-    <p>Raising Godly Leaders Through Quality Education</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#vision">Vision & Mission</a>
-    <a href="#departments">Departments</a>
-    <a href="#contact">Contact</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#004080;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Bishop Agori Iwe School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+          <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section id="about" class="about">
-    <h2>About Our School</h2>
-    <p>Bishop Agori Iwe Memorial Anglican Boys' Grammar School is a prestigious institution committed to academic excellence, discipline, and moral upbringing. 
-    Established to nurture young boys into responsible, God-fearing leaders, our school stands as a beacon of hope and transformation in Ughelli, Delta State.</p>
+  <!-- Hero Section -->
+  <section class="hero text-center text-white d-flex align-items-center justify-content-center" style="height:60vh; background: url('images/school-hero.jpg') center/cover no-repeat;">
+    <div data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Raising Godly Leaders Through Quality Education</h1>
+      <p class="lead">Excellence, Discipline, and Moral Upbringing</p>
+      <a href="admission.html" class="btn btn-warning btn-lg mt-3">Apply Now</a>
+    </div>
   </section>
 
-  <section id="vision" class="vision">
-    <h2>Vision & Mission</h2>
-    <p><strong>Vision:</strong> To be a model secondary school known for raising upright and intelligent leaders.</p>
-    <p><strong>Mission:</strong> To provide balanced education that combines academic excellence with moral and spiritual development.</p>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4" style="color:#004080;">About Our School</h2>
+      <p class="text-center mx-auto" style="max-width:800px;">
+        Bishop Agori Iwe Memorial Anglican Boys' Grammar School is a prestigious institution committed to academic excellence, discipline, and moral upbringing. 
+        Established to nurture young boys into responsible, God-fearing leaders, our school stands as a beacon of hope and transformation in Ughelli, Delta State.
+      </p>
+    </div>
   </section>
 
-  <section id="departments" class="departments">
-    <h2>Our Departments</h2>
-    <ul>
-      <li>Science Department</li>
-      <li>Arts and Humanities</li>
-      <li>Commercial Department</li>
-      <li>Technical and Vocational Studies</li>
-    </ul>
+  <!-- Vision & Mission -->
+  <section class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4" style="color:#004080;">Vision & Mission</h2>
+      <div class="row text-center">
+        <div class="col-md-6 mb-3">
+          <div class="p-4 bg-white shadow rounded">
+            <h4>Vision</h4>
+            <p>To be a model secondary school known for raising upright and intelligent leaders.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="p-4 bg-white shadow rounded">
+            <h4>Mission</h4>
+            <p>To provide balanced education that combines academic excellence with moral and spiritual development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> Bishop Agori Iwe Memorial Anglican Boys' Grammar School, Ughelli, Delta State.</p>
-    <p><strong>Phone:</strong> +234 812 345 6789</p>
-    <p><strong>Email:</strong> info@bishopagoriweschool.edu.ng</p>
+  <!-- Announcements -->
+  <section class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4" style="color:#004080;">Announcements</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><i class="fas fa-bullhorn text-warning"></i> School reopens on 1st September 2025.</li>
+        <li class="list-group-item"><i class="fas fa-bullhorn text-warning"></i> Parent-Teacher meeting scheduled for 15th October 2025.</li>
+        <li class="list-group-item"><i class="fas fa-bullhorn text-warning"></i> New admission registration now open.</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center text-white py-3" style="background-color:#004080;">
     &copy; 2025 Bishop Agori Iwe Memorial Anglican Boys' Grammar School. All Rights Reserved.
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    });
+    AOS.init();
   </script>
-
 </body>
 </html>
